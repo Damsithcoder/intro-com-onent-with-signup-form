@@ -1,0 +1,145 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    height: 120vh;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 75%, 65%);
+    background-blend-mode: inherit;
+    background-image: url(../images/bg-intro-mobile.png);
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+  }
+  .content{
+    margin: 25px 10px;
+    color: hsl(0, 100%, 100%);
+    font-weight: 400;
+  }
+  h1{
+    font-size: 50px;
+    font-weight: 700;
+  }
+  button{
+    cursor: pointer;
+    padding: 10px ;
+    border-radius: 10px;
+    width: 100%;
+    margin: 15px 0;
+    font-weight: 600;
+    color: aliceblue;
+    line-height: 25px;
+  }
+  form{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  .input{
+    width: 100%;
+    position: relative;
+  }
+  .input .warn{
+    text-align: right;
+  }
+  .input img{
+    position: absolute;
+    top: 25%;
+    right: 10%;
+  }
+  .warn{
+    font-size: 16px;
+    color: hsl(0, 75%, 65%);
+    font-style: italic;
+
+  }
+  input{
+    width: 100%;
+    font-weight: 500;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+  }
+  p{
+    margin: 10px ;
+  }
+  .btnContent{
+    width: 150px;
+  }
+  .trial{
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(250, 75%, 45%);
+    box-shadow: 0 5px 1px hsl(246, 10%, 50%);
+  }
+  .Claim{
+    border-style: none;
+    text-transform:uppercase;
+    box-shadow: 0 2px 1px hsl(154, 45%, 45%);
+    background-color: hsl(154, 75%, 55%);
+  }
+  .hide{
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+  .footer{
+    color: hsl(246, 10%, 75%);
+    width: 100%;
+  }
+  .terms{
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+  }
+  .btn{
+    color: hsl(0, 100%, 100%);
+    font-weight: 600;
+  }
+  @media (width>600px) {
+    main{
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      max-width: 1200px;
+    }
+    body{
+      max-width: 1440px;
+      background-blend-mode:hue;
+      background: url(../images/bg-intro-desktop.png), hsl(0, 100%, 74%); 
+    }
+    form{
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    .content{
+      grid-row-start:1;
+      grid-row-end: 3;
+      text-align: left;
+    }
+    h1{
+      font-size: 50px;
+      color: hsl(0, 100%, 100%);
+    }
+    .content p{
+      color: hsl(0, 100%, 100%);
+      font-size: 20px;
+    }
+    .btnContent{
+      width: 100%;
+    }
+  }
